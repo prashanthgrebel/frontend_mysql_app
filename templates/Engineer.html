@@ -1,0 +1,38 @@
+<head>
+  <style>
+    table, th, td {
+      border: 1px solid white;
+      border-collapse: collapse;
+    }
+    th, td {
+      background-color: #96D4D4;
+    }
+  </style>
+</head>
+
+<h1> Occupatin details for Engineer</h1>
+<table>
+  <thead>
+    
+    <tr>
+      <th> ID </th>
+      <th> NAME </th>
+      <th> occupation </th>
+      <th> age </th>
+
+    </tr>
+
+  </thead>
+  <tbody>
+    {% for row in data%}
+    <tr>
+      <td> {{ row[0] }} </td>
+      <td> {{ row[1] }} </td>
+      <td> {{ row[2] }} </td>
+      <td> {{ row[3] }} </td>
+
+    </tr>
+
+    {%endfor%}
+  </tbody>
+</table> 

@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    container_name: test_mysql
+    image: mysql:5.7.38
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Pgr@9902#wer
+      #MYSQL_DATABASE: your_database
+      MYSQL_USER: prashanth
+      MYSQL_PASSWORD: Pgr@9902#wer
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+      network_mode: host
+    ports:
+      - 3308:3306
+        #    volumes:

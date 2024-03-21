@@ -1,0 +1,38 @@
+<head>
+  <link rel='stylesheet' href="{{ url_for('static' , filename='style.css')}}">  <style>
+    body {
+      color: blue;
+      background-color: lightblue;
+      background-image: url("./static/bg1.jpg");
+    }
+    
+    h1 {
+      color: Red;
+    }
+    button {
+      background-color:  #04AA6D; /* Green */
+      border: blue;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+
+<h1> Welcome to Prashanth Developer Project</h1>
+
+<button type="button" onclick="window.location.href='{{url_for('Developer')}}';"> 
+
+  Developer details
+
+</button>
+
+<button type="button" onclick="window.location.href='{{ url_for('Engineer')}}';"> 
+
+  Engineer details
+
+</button>
